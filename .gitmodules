@@ -1,0 +1,4 @@
+[submodule "phuwit-flaxibility"]
+	path = flaxibility
+	url = https://github.com/sunad-party/phuwit-flaxibility.git
+	branch = main
