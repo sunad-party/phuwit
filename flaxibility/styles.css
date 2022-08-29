@@ -2,7 +2,7 @@
   display: flex;
   flex-wrap: wrap;
   flex-direction: column;
-  height: 100vh;
+  height: 95vh;
   justify-content: center;
   align-content: center;
   align-items: center;
@@ -26,6 +26,23 @@
   color: inherit;
   padding: 0.5em;
   font-size: 4em;
+}
+
+.attribution {
+  display: flex;
+  justify-items: center;
+  align-items: flex-start;  
+  height: 5vh;
+  width: 100%;
+  text-align: center;
+}
+
+.attribution p{
+  font-family: "Dosis", sans-serif;
+  text-align: center;
+  justify-self: center;
+  align-self: center;
+  width: 100%;
 }
 
 /* Tooltips */
