@@ -1,47 +1,121 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>flaxibility</title>
 
-    <link rel="stylesheet" href="styles.css">
-    <script src="https://kit.fontawesome.com/7e111b04a6.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="styles.css" />
+    <script
+      src="https://kit.fontawesome.com/7e111b04a6.js"
+      crossorigin="anonymous"
+    ></script>
 
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Dosis&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Dosis:wght@400;600&display=swap"
+      rel="stylesheet"
+    />
 
-    <link rel="apple-touch-icon" sizes="180x180" href="favicons/apple-touch-icon.png">
-    <link rel="icon" type="image/png" sizes="32x32" href="favicons/favicon-32x32.png">
-    <link rel="icon" type="image/png" sizes="16x16" href="favicons/favicon-16x16.png">
-    <link rel="manifest" href="favicons/site.webmanifest">
-    <link rel="mask-icon" href="favicons/safari-pinned-tab.svg" color="#5bbad5">
-    <link rel="shortcut icon" href="favicons/favicon.ico">
-    <meta name="apple-mobile-web-app-title" content="flaxibility">
-    <meta name="application-name" content="flaxibility">
-    <meta name="msapplication-TileColor" content="#ffffff">
-    <meta name="msapplication-config" content="/favicons/browserconfig.xml">
-    <meta name="theme-color" content="#ffffff">
-</head>
-<body style="margin: 0px;">
+    <link
+      rel="apple-touch-icon"
+      sizes="180x180"
+      href="favicons/apple-touch-icon.png"
+    />
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="favicons/favicon-32x32.png"
+    />
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="16x16"
+      href="favicons/favicon-16x16.png"
+    />
+    <link rel="manifest" href="favicons/site.webmanifest" />
+    <link
+      rel="mask-icon"
+      href="favicons/safari-pinned-tab.svg"
+      color="#5bbad5"
+    />
+    <link rel="shortcut icon" href="favicons/favicon.ico" />
+    <meta name="apple-mobile-web-app-title" content="flaxibility" />
+    <meta name="application-name" content="flaxibility" />
+    <meta name="msapplication-TileColor" content="#ffffff" />
+    <meta name="msapplication-config" content="/favicons/browserconfig.xml" />
+    <meta name="theme-color" content="#ffffff" />
+  </head>
+  <body style="margin: 0px">
     <div class="container">
-        <img class="logo" src="logo.svg" alt="logo">
-        <div class="links">
-            <a href="https://github.com/phuwit/flaxibility" class="tooltip-wrapper">
-                <i class="fa-brands fa-github"></i>
-                <div class="tooltip">Source code on GitHub</div>
-            </a>
-            <a href="https://github.com/phuwit/flaxibility/releases" class="tooltip-wrapper">
-                <i class="fa-solid fa-download"></i>
-                <div class="tooltip">Releases on GitHub</div>
-            </a>
-            <a href="https://pile.phuwit.sunad.party/flaxibility/report.pdf" class="tooltip-wrapper">
-                <i class="fa-solid fa-file"></i>
-                <div class="tooltip">Documents</div>
-            </a>
-        </div>
+      <img class="logo" src="logo.svg" alt="logo" />
+      <div class="links">
+        <a href="https://github.com/phuwit/flaxibility" class="tooltip-wrapper">
+          <i class="fa-brands fa-github"></i>
+          <div class="tooltip">Source code on GitHub</div>
+        </a>
+        <a
+          href="https://github.com/phuwit/flaxibility/releases"
+          class="tooltip-wrapper"
+        >
+          <i class="fa-solid fa-download"></i>
+          <div class="tooltip">Releases on GitHub</div>
+        </a>
+        <a href="#documents-popup" class="tooltip-wrapper">
+          <i class="fa-solid fa-file"></i>
+          <div class="tooltip">Documents</div>
+        </a>
+        <a href="#trailer-popup" class="tooltip-wrapper">
+          <i class="fa-solid fa-video"></i>
+          <div class="tooltip">Trailer</div>
+        </a>
+      </div>
     </div>
-</body>
+    <div id="documents-popup" class="overlay" href="#">
+      <div class="popup">
+        <h2>Documents</h2>
+        <a class="close" href="#">×</a>
+        <div class="content content-documents">
+          <ul>
+            <li>
+              <a
+                href="https://pile.phuwit.sunad.party/flaxibility/extended-abstract.pdf"
+                ><i class="fa-solid fa-download"></i></a
+              >Extended Abstract
+            </li>
+            <li>
+              <a href="https://pile.phuwit.sunad.party/flaxibility/e-poster.png"
+                ><i class="fa-solid fa-download"></i></a
+              >E-Poster
+            </li>
+            <li>
+              <a href="https://pile.phuwit.sunad.party/flaxibility/report.pdf"
+                ><i class="fa-solid fa-download"></i></a
+              >Report
+            </li>
+          </ul>
+        </div>
+      </div>
+    </div>
+    <div id="trailer-popup" class="overlay" href="#">
+      <div class="popup">
+        <h2>Trailer</h2>
+        <a class="close" href="#">×</a>
+        <div class="content trailer-content">
+          <iframe
+            width="560"
+            height="315"
+            src="https://www.youtube-nocookie.com/embed/Xghm-fRcgpU"
+            title="Flaxibility Trailer on YouTube"
+            frameborder="0"
+            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+            allowfullscreen
+          ></iframe>
+        </div>
+      </div>
+    </div>
+  </body>
 </html>
