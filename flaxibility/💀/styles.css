@@ -25,7 +25,7 @@
 
 .links a, .phaksiandong-button {
   text-decoration: none;
-  font-family: "Dosis", sans-serif;
+  font-family: 'Charmonman', cursive;
   color: inherit;
   padding: 0.5em;
   font-size: 4em;
@@ -41,7 +41,7 @@
 }
 
 .attribution p{
-  font-family: "Dosis", sans-serif;
+  font-family: 'Charmonman', cursive;
   text-align: center;
   justify-self: center;
   align-self: center;
@@ -63,7 +63,7 @@
 }
 
 .tooltip-wrapper .tooltip {
-  font-family: "Dosis", sans-serif;
+  font-family: 'Charmonman', cursive;
   font-size: 0.4em;
   background: black;
   top: 100%;
@@ -157,7 +157,7 @@
   width: 70%;
   position: relative;
   transition: all 200ms ease-in-out;
-  font-family: "Dosis", sans-serif;
+  font-family: 'Charmonman', cursive;
 }
 
 .popup h2 {
