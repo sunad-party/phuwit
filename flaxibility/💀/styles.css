@@ -23,7 +23,7 @@
   color: #424242;
 }
 
-.links a {
+.links a, .phaksiandong-button {
   text-decoration: none;
   font-family: "Dosis", sans-serif;
   color: inherit;
