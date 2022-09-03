@@ -1,0 +1,210 @@
+.container {
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: column;
+  height: 95vh;
+  justify-content: center;
+  align-content: center;
+  align-items: center;
+}
+
+.logo {
+  display: flex;
+  justify-self: center;
+  align-self: center;
+  height: 30%;
+  margin: 64px;
+  font-family: 'Charmonman', cursive;
+  color: #673ab7;
+  font-size: 8rem;
+}
+
+.links {
+  color: #424242;
+}
+
+.links a {
+  text-decoration: none;
+  font-family: "Dosis", sans-serif;
+  color: inherit;
+  padding: 0.5em;
+  font-size: 4em;
+}
+
+.attribution {
+  display: flex;
+  justify-items: center;
+  align-items: flex-start;  
+  height: 5vh;
+  width: 100%;
+  text-align: center;
+}
+
+.attribution p{
+  font-family: "Dosis", sans-serif;
+  text-align: center;
+  justify-self: center;
+  align-self: center;
+  width: 100%;
+}
+
+/* Tooltips */
+
+.tooltip-wrapper {
+  margin: 0 auto;
+  /* padding: 15px 20px; */
+  position: relative;
+  text-align: center;
+  /* width: 230px; */
+  /* webkit text rendering fix */
+  transform: translateZ(0);
+  -webkit-transform: translateZ(0);
+  -webkit-font-smoothing: antialiased;
+}
+
+.tooltip-wrapper .tooltip {
+  font-family: "Dosis", sans-serif;
+  font-size: 0.4em;
+  background: black;
+  top: 100%;
+  color: white;
+  display: block;
+  left: 0;
+  margin-top: 16px;
+  opacity: 0;
+  padding: 0.4em;
+  pointer-events: none;
+  position: absolute;
+  width: 100%;
+  -webkit-transform: translateY(10px);
+  -moz-transform: translateY(10px);
+  -ms-transform: translateY(10px);
+  -o-transform: translateY(10px);
+  transform: translateY(10px);
+  -webkit-transition: all 0.25s ease-out;
+  -moz-transition: all 0.25s ease-out;
+  -ms-transition: all 0.25s ease-out;
+  -o-transition: all 0.25s ease-out;
+  transition: all 0.25s ease-out;
+}
+
+/* This bridges the gap so you can mouse into the tooltip without it disappearing */
+.tooltip-wrapper .tooltip:before {
+  bottom: -20px;
+  content: " ";
+  display: block;
+  height: 20px;
+  left: 0;
+  position: absolute;
+  width: 100%;
+}
+
+/* CSS Triangles - see Trevor's post */
+.tooltip-wrapper .tooltip:after {
+  border-left: solid transparent 10px;
+  border-right: solid transparent 10px;
+  border-bottom: solid black 10px;
+  top: -10px;
+  content: " ";
+  height: 0;
+  left: 50%;
+  margin-left: -13px;
+  position: absolute;
+  width: 0;
+}
+
+.tooltip-wrapper:hover .tooltip {
+  opacity: 1;
+  pointer-events: auto;
+  -webkit-transform: translateY(0px);
+  -moz-transform: translateY(0px);
+  -ms-transform: translateY(0px);
+  -o-transform: translateY(0px);
+  transform: translateY(0px);
+}
+
+/* IE can just show/hide with no transition */
+.lte8 .tooltip-wrapper .tooltip {
+  display: none;
+}
+.lte8 .tooltip-wrapper:hover .tooltip {
+  display: block;
+}
+
+/* Popup */
+
+.overlay {
+  position: fixed;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  background: rgba(0, 0, 0, 0.7);
+  transition: opacity 200ms;
+  visibility: hidden;
+  opacity: 0;
+}
+.overlay:target {
+  visibility: visible;
+  opacity: 1;
+}
+
+.popup {
+  margin: 60px auto;
+  padding: 3em;
+  background: #fff;
+  border-radius: 5px;
+  width: 70%;
+  position: relative;
+  transition: all 200ms ease-in-out;
+  font-family: "Dosis", sans-serif;
+}
+
+.popup h2 {
+  margin-top: 0;
+  color: #424242;
+  font-weight: 600;
+  font-size: 2em;
+}
+.popup .close {
+  position: absolute;
+  top: 20px;
+  right: 30px;
+  transition: all 100ms;
+  font-size: 4em;
+  font-weight: bold;
+  text-decoration: none;
+  color: #333;
+}
+.popup .close:hover {
+  color: #673ab7;
+}
+.popup .content {
+  display: flex;
+  max-height: 70%;
+  overflow: auto;
+  color: #424242;
+  font-size: 1.5em;
+}
+
+.popup .trailer-content {
+  align-items: center;
+  justify-content: center;
+}
+
+.popup .documents-content {
+  align-items: center;
+  justify-content: left;
+}
+
+.popup .content ul li {
+  font-size: 3rem;
+  padding: 1rem;
+  list-style-type: none;
+}
+
+.popup .content ul li a {
+  text-decoration: none;
+  color: inherit;
+  padding: 0.5em;
+}
